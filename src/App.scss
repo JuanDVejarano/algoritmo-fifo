@@ -1,18 +1,46 @@
-.button {
-    cursor: pointer;
-    background-color: #FFFFFF;
-    border-radius: 20px;
-    padding: 6px 18px;
-    color: #0F1419;
-    border: 1px solid #D0D9DE;
-    width: fit-content;
-}
-
 .mainSection {
     padding: 40px 20px;
     display: flex;
     flex-direction: column;
     gap: 20px;
+
+    .TitlePage {
+        font-size: 36px;
+        font-weight: bold;
+        color: #d2d2d2;
+        width: 100%;
+        text-align: center;
+    }
+
+    .configuration {
+        padding: 10px;
+
+        legend {
+            font-size: 24px;
+            font-weight: bold;
+            color: #dcdcdc;
+        }
+
+        label {
+            font-size: 18px;
+            color: #dcdcdc;
+            padding: 20px;
+        }
+
+        input {
+            margin-right: 10px;
+        }
+    }
+
+    .button {
+        cursor: pointer;
+        background-color: #FFFFFF;
+        border-radius: 20px;
+        padding: 6px 18px;
+        color: #0F1419;
+        border: 1px solid #D0D9DE;
+        width: fit-content;
+    }
 
     .divTables {
 
@@ -61,6 +89,21 @@
                     p {
                         font-weight: bold;
                     }
+                }
+
+                .resultTime {
+                    display: flex;
+                    flex-direction: column;
+
+                    p {
+                        width: 100%;
+                    }
+
+                    &--first {
+                        @extend .resultTime;
+                        border-top: 2px solid #070707;
+                    }
+
                 }
             }
         }
