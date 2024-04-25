@@ -1,0 +1,70 @@
+.button {
+    cursor: pointer;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    padding: 6px 18px;
+    color: #0F1419;
+    border: 1px solid #D0D9DE;
+    width: fit-content;
+}
+
+.mainSection {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .divTables {
+
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .table {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            flex-basis: 450px;
+
+
+            .titleSection {
+                font-size: 24px;
+                font-weight: bold;
+                color: #dcdcdc;
+            }
+
+            .listTask {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: #FFFFFF;
+                border-radius: 10px;
+
+                li {
+                    display: flex;
+                    border-top: 1px solid #6926D7;
+                    width: 100%;
+                    padding: 15px;
+
+                    p {
+                        color: #333333;
+                        width: 25%;
+                    }
+                }
+
+                .titleList {
+                    background-color: #F5F5F5;
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+
+                    p {
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+
+
+}
